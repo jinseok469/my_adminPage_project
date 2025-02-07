@@ -47,6 +47,134 @@ h6 {
   transition: all 0.3s;
 }
 
+.group-row-high{
+  height: 16%;
+  align-items: center;
+}
+select {
+            
+  width: 100%;
+}
+
+h1 {
+  color: dimgray;
+}
+
+.text {
+  padding-top: 2%;
+  padding-left: 5%;
+}
+.text1{
+  padding-top: 4%;
+  padding-left: 2.5%;
+}
+
+sup {
+  color: red;
+}
+
+button {
+  
+  color: black;
+}
+
+.firstcol-row {
+  padding-top: 180%;
+}
+
+.basic {
+
+  width: 120%;
+  background-color: aliceblue;
+}
+
+.view {
+  text-align: center;
+  padding-top: 179%;
+}
+
+.col-8 {
+
+  align-items: center;
+
+}       
+.row-1 {
+  border: 1px solid lightgray;
+}
+
+.container-fluid {
+  margin: 0%;
+  padding: 0%;
+}
+
+h5 {
+  padding-left: 3%;
+}
+
+.col-3 {
+  padding-top: 3%;
+}
+.form-check{
+  padding-top: 10%;
+}
+
+input {
+  width: 100%;
+}    
+.pad {
+  padding-top: 2%;
+  padding-left: 3%;
+}
+
+.pade {
+  padding-left: 3%;
+}
+.padinput{
+  padding-top: 1%;
+}
+.input-row{
+  padding-left: 3%;
+  
+}
+.body-color{
+  background-color: white;
+}
+.text-center{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  
+  text-align: center;
+}
+.bt{
+  padding-left: 7%;
+}
+.color-row{
+  background-color: aliceblue;
+}
+.deco{
+  text-decoration: none;
+}
+.col-10{
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.white-row{
+  background-color: white;
+}
+.row-high{
+  align-items: center;
+  height: 13%;
+}
+textarea{
+  height: 70%;
+}
+.btn-end {
+  display: flex;
+  justify-content: end;
+  padding-top: 45%;
+}
+
 @media (max-width: 1199px) {
   #main {
     padding: 20px;
@@ -633,6 +761,7 @@ h6 {
 
   #main,
   #footer {
+    
     margin-left: 300px;
   }
 }
@@ -1213,11 +1342,18 @@ h6 {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.footer-row{
+  padding-top: 5%;
+}
 .footer {
   padding: 20px 0;
   font-size: 14px;
   transition: all 0.3s;
   border-top: 1px solid #cddfff;
+}
+.copyright{
+  /* display: flex;
+  justify-content: end; */
 }
 
 .footer .copyright {
