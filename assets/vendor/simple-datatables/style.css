@@ -27,6 +27,7 @@
 
 .datatable-selector {
 	padding: 6px;
+	width: 200px;
 }
 
 .datatable-input {
@@ -40,7 +41,8 @@
 /* PAGER */
 .datatable-pagination ul {
 	margin: 0;
-	padding-left: 0;
+	padding-right: 750px;
+	
 }
 
 .datatable-pagination li {
@@ -49,7 +51,7 @@
 }
 
 .datatable-pagination li.datatable-hidden {
-    visibility: hidden;
+    
 }
 
 .datatable-pagination a,
@@ -62,6 +64,7 @@
 	text-decoration: none;
 	color: #333;
     cursor: pointer;
+	
 }
 
 .datatable-pagination a:hover,
@@ -120,8 +123,9 @@
 .datatable-table > tfoot > tr > th,
 .datatable-table > thead > tr > td,
 .datatable-table > thead > tr > th {
-	vertical-align: top;
-	padding: 8px 10px;
+	vertical-align: center;
+	padding: 18px 10px;
+	text-align: center;
 }
 
 .datatable-table > thead > tr > th {

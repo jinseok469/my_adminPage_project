@@ -15,7 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -275,13 +277,13 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>HOME</span>
         </a>
       </li><!-- End Dashboard Nav -->
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-bell"></i>
           <span>공지사항</span>
         </a>
@@ -412,17 +414,17 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-gear"></i><span>시스템관리</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="charts-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="./code.html">
+            <a href="code.html" >
               <i class="bi bi-circle"></i><span>코드 관리</span>
             </a>
           </li>
           <li>
-            <a href="./codeGroup.html">
+            <a href="codeGroup.html" class="active">
               <i class="bi bi-circle"></i><span>코드그룹 관리</span>
             </a>
           </li>
@@ -511,121 +513,120 @@
     </ul>
 
   </aside><!-- End Sidebar-->
-<form action="">
-    <div class="container-fluid">
   <main id="main" class="main">
-    <div class="row">
+
     <div class="pagetitle">
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Page 1</a></li>
-          <li class="breadcrumb-item"><a href="index.html">Page 2</a></li>
+          <li class="breadcrumb-item"><a href="index.html">page 1</a></li>
+          <li class="breadcrumb-item">page 2</li>
           <li class="breadcrumb-item active">Default</li>
         </ol>
       </nav>
+      <h1>CodeGroup</h1>
     </div><!-- End Page Title -->
-    <div class="row ">
-        <div class="col pade">
-            <h1>CodeGroup</h1>
-    </div>
-    <div class="row">
-        <div class="col"></div>
-        <div class="col-11">
-            <div class="row group-row-high" style="border: 1px solid lightgray; border-radius: 5px;">
-                <h3>기본정보</h3>
+
+    <section class="section">
+      <div class="row">
+        
+        <div class="col-lg-12">
+          <div class="card" >
+            <div class="card-body">
+              <h1 class="card-title" style="height: 100px;" >기본정보</h1>
+
+              <!-- Custom Styled Validation -->
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-3" style="height: 100px;">
+                  <label for="validationCustom02" class="form-label">코드그룹 코드 <sup>*</sup></label>
+                  <input type="text" class="form-control" id="validationCustom02" value="" placeholder="자동생성" required disabled>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+      
+                <div class="col-md-3" style="height: 100px;">
+                  <label for="validationCustom02" class="form-label">코드그룹 코드 (ANOTHER)</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="" placeholder="영대소문자,숫자" required >
+                  <div class="valid-feedback">
+                    코드를 입력해주세요!
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom03" class="form-label">코드그룹 이름 <sup>*</sup></label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="한글,영대문자,숫자" required>
+                  <div class="invalid-feedback">
+                    코드를 입력해주세요.
+                  </div>
+                </div>
+                
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">코드그룹 이름 (영문)</label>
+                  <input type="text" class="form-control" id="validationCustom05" placeholder="영대소문자,숫자" required>
+                  <div class="invalid-feedback">
+                    코드이름 을 입력해주세요.
+                  </div>
+                </div>
+                
+                <div class="col-md-3" style="height: 100px;">
+                  <label for="validationCustom05" class="form-label">사용여부<sup>*</sup></label>
+                  <select class="form-select" id="validationCustom05" required>
+                    <option selected disabled value="">사용</option>
+                    <option>아무거나</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    항목중 하나를 선택 해주세요.
+                  </div>
+                </div>
+                
+                <div class="col-md-3">
+                  <label for="validationCustom08" class="form-label">순서<sup>*</sup></label>
+                  <input type="text" class="form-control" id="validationCustom08" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-6" style="height: 150px;">
+                  <label for="validationCustom09" class="form-label">설명</label>
+                  <textarea class="form-control" id="validationCustom09" required></textarea>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                  <a href="codeGroupList.html" class="btn btn-outline-dark"><i class="bi bi-blockquote-right"></i></a></div>
+                <div class="col-md-6">
+                  <div style="display: flex;justify-content: end;"><button class="btn btn-primary"><i class="bi bi-server"></i></button></div>
+                </div>
+              </form><!-- End Custom Styled Validation -->
+
             </div>
-            <div class="row white-row" style="border: 1px solid lightgray; border-radius: 5px;" >
-              <div class="row">
-                  <div class="col-3">
-                  <label for="text20" class="text form-control-label">코드그룹 코드<sup>*</sup></label>
-                  <input type="text" class="form-control" id="text20" disabled placeholder="자동생성">
-                   </div>
-                  <div class="col-3">
-                      <label for="text21" class="text form-control-label">코드그룹 코드 (ANOTHER)</label>
-                      <input type="text" class="form-control" id="text21" placeholder="영대소문자,숫자">
-                       </div>
-                  <div class="col-3"> 
-                      <label for="text22" class="text form-control-label">코드그룹 이름<sup>*</sup></label>
-                      <input type="text" class="form-control" id="text22" placeholder="한글,영대소문자,숫자">
-                  </div>
-                  <div class="col-3"> 
-                      <label for="text23" class="text form-control-label">코드그룹 이름(영문)</label>
-                      <input type="text" class="form-control" id="text23" placeholder="영대소문자,숫자">
-                  </div>
-                  </div>
-             
-              
-              <div class="row">
-                  <div class="col-3">
-                      <label for="select2" class="text form-select-label">사용 여부<sup>*</sup></label>
-                  <select class="form-select" id="select2"><option value="">사용</option></select>
-                  </div>
-                  <div class="col-3">
-                      <label for="text5" class="text form-control-label">순서</label>
-                  <input type="text" class="form-control" id="text5">
-                  </div>
-                  <div class="col-3"></div>
-                  <div class="col-3"></div>
-              </div>
-              <div class="row" style="height: 150px;">
-                  <div class="col-6 ">
-                      <label for="textarea1" class="form-control-label text1">설명</label>
-                      <textarea class="form-control" id="textarea1"></textarea>
-                  </div>
-                  <div class="col-6"></div>
-              </div>
-              <div class="row">
-                  <div class="col-3">
-                      <button class="btn btn-outline-dark"><i class="bi bi-blockquote-right"></i></button>
-                  </div>
-                  <div class="col-3"></div>
-                  <div class="col-5"></div>
-                  <div class="col-1">
-                      <div class="btn-end"><button class="btn btn-primary"><i class="bi bi-server"></i></button></div>
-                  </div>
-              </div>
           </div>
+
           
-      
-             
+
+        </div>
       </div>
-        <div class="col"></div>
-    </div>
-    
-    
-
- 
-           
-
-      
+    </section>
 
   </main><!-- End #main -->
-  
-<div class="row" style="padding-top: 10.7%;">
-    <hr>
-  <!-- ======= Footer ======= -->
-  <div class="col-4"></div>
-  <div class="col-4 ">
-    <div class="copyright" style="text-align: center;">
+
+  <footer id="footer" class="footer">
+    <div class="copyright">
       &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
     </div>
-    <div class="credits " style="text-align: center;">
+    <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-       Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
     </div>
-    </div>
-    <div class="col-4"></div>
-</div>
-
- <!--End Footer-->
+  </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-</div>
-</div>
-</form>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
