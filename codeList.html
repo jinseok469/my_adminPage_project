@@ -15,7 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -275,13 +277,13 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
           <span>HOME</span>
         </a>
       </li><!-- End Dashboard Nav -->
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-bell"></i>
           <span>공지사항</span>
         </a>
@@ -412,17 +414,17 @@
       </li><!-- End Tables Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-gear"></i><span>시스템관리</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <ul id="charts-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="./code.html">
+            <a href="codeList.html" class="active" >
               <i class="bi bi-circle"></i><span>코드 관리</span>
             </a>
           </li>
           <li>
-            <a href="./codeGroup.html">
+            <a href="codeGroupList.html" >
               <i class="bi bi-circle"></i><span>코드그룹 관리</span>
             </a>
           </li>
@@ -511,238 +513,259 @@
     </ul>
 
   </aside><!-- End Sidebar-->
-<form action="">
-    <div class="container-fluid">
   <main id="main" class="main">
-    <div class="row">
+
     <div class="pagetitle">
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Page 1</a></li>
-          <li class="breadcrumb-item"><a href="index.html">Page 2</a></li>
+          <li class="breadcrumb-item"><a href="index.html">page 1</a></li>
+          <li class="breadcrumb-item">page 2</li>
           <li class="breadcrumb-item active">Default</li>
         </ol>
       </nav>
+      <h1 style="height: 50px;">Code</h1>
     </div><!-- End Page Title -->
-    <div class="row">
-        <div class="col pade">
-            <h1>Code</h1>
-        </div>
-    </div>
-    <div class="row input-row">
-        <div class="col-2 padinput">
-            <select class="form-select">
-                <option value="">N</option>
-            </select>
-        </div>
-        <div class="col-2 padinput">
-            <select class="form-select">
-                <option value="">Y</option>
-            </select>
-        </div>
-        <div class="col-2 padinput">
-            <select class="form-select">
-                <option value="">날짜</option>
-                <option value="">등록일</option>
-                <option value="">수정일</option>
-            </select>
-        </div>
-        <div class="col-2 padinput">
-            <input type="text" placeholder="2024-12-25" class="form-control">
-        </div>
-        <div class="col-2 padinput">
-            <input type="text" placeholder="2025-01-24" class="form-control">
-        </div>
-    </div>
-    <div class="row input-row">
-        <div class="col-2 padinput">
-            <select class="form-select">
-                <option value="">검색구분</option>
-                <option value="">코드그룹 코드</option>
-                <option value="">코드그룹 이름</option>
-                <option value="">코드</option>
-                <option value="">대체코드</option>
-                <option value="">코드이름</option>
-                <option value="">코드이름(영문)</option>
-            </select>
-        </div>
-        <div class="col-2 padinput">
-            <input type="text" placeholder="검색어" class="form-control">
-        </div>
-        <div class="col-2 padinput">
-            <button class="btn btn-outline-dark" type="button" >돋보기</button>
-            <button class="btn btn-outline-dark" type="button" >새로고침</button>
-        </div>
-    </div>
-</div>
-<div class="row input-row body-color">
-    <div class="col-2 padinput"><h4 style="color: gray;">Total:162</h4>
-    </div>
-    <div class="col-2 padinput"></div>
-    <div class="col-2 padinput"></div>
-    <div class="col-2 padinput"></div>
-    <div class="col-2 padinput"></div>
-    <div class="col-2 padinput">
-        <select class="form-select">
-            <option value="">5</option>
-        </select>
-    </div>
-    <hr>
-    <div class="col text-center">
-        <div class="text-center"><input type="checkbox" class="form-check"></div>
-    </div>
-    <div class="col text-center">#</div>
-    <div class="col text-center">사용</div>
-    <div class="col text-center">코드그룹 코드</div>
-    <div class="col-2 text-center">코드그룹 이름</div>
-    <div class="col text-center">코드</div>
-    <div class="col text-center">대체코드</div>
-    <div class="col text-center">코드이름</div>
-    <div class="col text-center">코드이름(영문)</div>
-    <div class="col text-center">순서</div>
-    <div class="col text-center">등록일</div>
-    <div class="col text-center">수정일</div>
-    <hr>
-    <div class="col text-center">
-        <div class="text-center"><input type="checkbox" class="form-check"></div>
-    </div>
-    <div class="col text-center">162</div>
-    <div class="col text-center">Y</div>
-    <div class="col text-center">42</div>
-    <div class="col-2 text-center">작품,기타사이트유형</div>
-    <div class="col text-center">381</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"><a href="" class="deco">공식홈페이지</a></div>
-    <div class="col text-center"></div>
-    <div class="col text-center">1</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"></div>
-    <hr>
-    <div class="col text-center">
-        <div class="text-center"><input type="checkbox" class="form-check"></div>
-    </div>
-    <div class="col text-center">161</div>
-    <div class="col text-center">Y</div>
-    <div class="col text-center">42</div>
-    <div class="col-2 text-center">작품,기타사이트유형</div>
-    <div class="col text-center">382</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"><a href="" class="deco">기타사이트</a></div>
-    <div class="col text-center"></div>
-    <div class="col text-center">2</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"></div>
-    <hr>
-    <div class="col text-center">
-        <div class="text-center"><input type="checkbox" class="form-check"></div>
-    </div>
-    <div class="col text-center">160</div>
-    <div class="col text-center">Y</div>
-    <div class="col text-center">41</div>
-    <div class="col-2 text-center">작품,연재사이트</div>
-    <div class="col text-center">372</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"><a href="" class="deco">네이버웹툰</a></div>
-    <div class="col text-center"></div>
-    <div class="col text-center">1</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"></div>
-    <hr>
-    <div class="col text-center">
-        <div class="text-center"><input type="checkbox" class="form-check"></div>
-    </div>
-    <div class="col text-center">159</div>
-    <div class="col text-center">Y</div>
-    <div class="col text-center">41</div>
-    <div class="col-2 text-center">작품,기타사이트유형</div>
-    <div class="col text-center">373</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"><a href="" class="deco">카카오웹툰</a></div>
-    <div class="col text-center"></div>
-    <div class="col text-center">2</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"></div>
-    <hr>
-    <div class="col text-center">
-        <div class="text-center"><input type="checkbox" class="form-check"></div>
-    </div>
-    <div class="col text-center">158</div>
-    <div class="col text-center">Y</div>
-    <div class="col text-center">41</div>
-    <div class="col-2 text-center">작품,기타사이트유형</div>
-    <div class="col text-center">374</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"><a href="" class="deco">버프툰</a></div>
-    <div class="col text-center"></div>
-    <div class="col text-center">3</div>
-    <div class="col text-center"></div>
-    <div class="col text-center"></div>
-    <hr>
-    <div class="col-12">
-        <ul class="pagination justify-content-center" >
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-    </div>
-    <div class="col-1">
-        <button class="btn btn-danger" type="button">X</button>
-        <button class="btn btn-danger" type="button">ㅂ</button>
-    </div>
-    <div class="col-9"></div>
-    <div class="col-2 bt">
-        <button class="btn btn-primary " type="button">U</button>
-        <button class="btn btn-success " type="button">ㅂ</button>
-        <button class="btn btn-primary " type="button">+</button>
-    </div>
-</div>
-    
-    
 
- 
-           
+    <section class="section">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-2" style="height: 10px;">
+                
+                <select class="form-select" id="" >
+                  <option selected disabled value="">N</option>
+                  <option>아무거나</option>
+                </select>
+                <div class="invalid-feedback">
+                  항목중 하나를 선택 해주세요.
+                </div>
+              </div>
+            <div class="col-md-2">
+                <select class="form-select" id="" >
+                    <option selected disabled value="">Y</option>
+                    <option>아무거나</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    항목중 하나를 선택 해주세요.
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <select class="form-select" id="" >
+                    <option selected disabled value="">날짜</option>
+                    <option>등록일</option>
+                    <option>수정일</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    항목중 하나를 선택 해주세요.
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="validationCustom03" placeholder="2025-01-05" >
+                  <div class="invalid-feedback">
+                    코드를 입력해주세요.
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="validationCustom03" placeholder="2025-02-04" >
+                  <div class="invalid-feedback">
+                    코드를 입력해주세요.
+                  </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <select class="form-select" id="" >
+                    <option selected disabled value="">검색구분</option>
+                    <option>코드그룹 코드</option>
+                    <option>코드그룹 이름</option>
+                    <option>코드</option>
+                    <option>대체코드</option>
+                    <option>코드 이름</option>
+                    <option>코드 이름(영문)</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    항목중 하나를 선택 해주세요.
+                  </div>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" id="validationCustom03" placeholder="검색어" >
+                  <div class="invalid-feedback">
+                    코드를 입력해주세요.
+                  </div>
+            </div>
+            <div class="col-md-8">
+                <button class="btn btn-outline-dark" type="button" ><i class="bi bi-search"></i></button>
+                <button class="btn btn-outline-dark" type="button" ><i class="bi bi-arrow-clockwise"></i></button>
+            </div>
+        
+        <div class="col-lg-12">
+          <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title-list">Total : 162</h5>
 
-      
+              <!-- Table with stripped rows -->
+              <table class="table datatable">
+                <thead>
+                  <tr>
+                    
+                    <th data-sortable="false"  style="text-align: center; width: 100px;">checked</th>
+                    <th data-sortable="false" style="width: 10px; text-align: center;" >#</th>
+                    <th style="text-align: center;">
+                      사용
+                    </th>
+                    <th class="list-sort" >코드그룹 코드</th>
+                    <th class="list-sort" >코드그룹 이름</th>
+                    <th class="list-sort" >코드</th>
+                    <th class="list-sort" >대체 코드</th>
+                    <th class="list-sort" >코드 이름</th>
+                    <th class="list-sort" >코드 이름(영문)</th>
+                    <th class="list-sort" >순서</th>
+                    <th data-type="date" data-format="YYYY/DD/MM" class="list-sort" >등록일</th>
+                    <th data-type="data" data-format="YYYY/DD/MM" class="list-sort" >수정일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
+                        <td>162</td>
+                        <td >Y</td>
+                        <td >42</td>
+                        <td >작품,기타사이트유형</td>
+                        <td >381</td>
+                        <td ></td>
+                        <td ><a href="">공식홈페이지</a></td>
+                        <td ></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
+                        <td>161</td>
+                        <td >Y</td>
+                        <td >41</td>
+                        <td >작품,기타사이트유형/td>
+                        <td >382</td>
+                        <td ></td>
+                        <td ><a href="">기타사이트</a></td>
+                        <td ></td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
+                        <td>160</td>
+                        <td >Y</td>
+                        <td >40</td>
+                        <td >작품,연재사이트</td>
+                        <td >372</td>
+                        <td ></td>
+                        <td ><a href="">네이버웹툰</a></td>
+                        <td ></td>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
+                        <td>159</td>
+                        <td >Y</td>
+                        <td >39</td>
+                        <td >작품,연재사이트</td>
+                        <td >373</td>
+                        <td ></td>
+                        <td ><a href="">카카오웹툰</a></td>
+                        <td ></td>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
+                        <td>158</td>
+                        <td >Y</td>
+                        <td >38</td>
+                        <td >작품,연재사이트</td>
+                        <td >374</td>
+                        <td ></td>
+                        <td ><a href="">버프툰</a></td>
+                        <td ></td>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
+                        <td>42</td>
+                        <td >Y</td>
+                        <td >42</td>
+                        <td ><a href="">작품,기타사이트유형</a></td>
+                        <td ></td>
+                        <td >8</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
+                        <td>42</td>
+                        <td >Y</td>
+                        <td >42</td>
+                        <td ><a href="">작품,기타사이트유형</a></td>
+                        <td ></td>
+                        <td >8</td>
+                        <td >1</td>
+                        <td ></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                  
+                  </tbody>
+                  <tfoot>
+                    
+                  </tfoot>
+                  
+                  </table>
+                  <div class="row">
+                    <div class="col-md-6">
+                  <button class="btn btn-danger">X</button>
+                  <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                </div>
+                <div class="col-md-6" style="display: flex; justify-content: end;">
+                    
+                    <button class="btn btn-success"><i class="bi bi-journal-x"></i></button>
+                  <a href="codeGroup.html" class="btn btn-primary"><i class="bi bi-plus-lg"></i></a>
+                </div>
+                </div>
+
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
 
   </main><!-- End #main -->
-  
-<div class="row">
-    <hr>
-  <!-- ======= Footer ======= -->
-  <div class="col-4"></div>
-  <div class="col-4 ">
-    <div class="copyright" style="text-align: center;">
+
+  <footer id="footer" class="footer">
+    <div class="copyright">
       &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
     </div>
-    <div class="credits " style="text-align: center;">
+    <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-       Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
     </div>
-    </div>
-    <div class="col-4"></div>
-</div>
-
- <!--End Footer-->
+  </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-</div>
-</div>
-</form>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
