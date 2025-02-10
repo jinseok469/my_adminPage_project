@@ -419,12 +419,12 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="codeList.html" >
+            <a href="codelist.html" class="active" >
               <i class="bi bi-circle"></i><span>코드 관리</span>
             </a>
           </li>
           <li>
-            <a href="codeGroupList.html" class="active">
+            <a href="codeGroupList.html" >
               <i class="bi bi-circle"></i><span>코드그룹 관리</span>
             </a>
           </li>
@@ -516,220 +516,142 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">page 1</a></li>
-          <li class="breadcrumb-item">page 2</li>
-          <li class="breadcrumb-item active">Default</li>
-        </ol>
-      </nav>
-      <h1 style="height: 50px;">CodeGroup</h1>
+      
+      <h1>기본정보</h1>
     </div><!-- End Page Title -->
 
     <section class="section">
-        <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-2" style="height: 10px;">
-                
-                <select class="form-select" id="" >
-                  <option selected disabled value="">N</option>
-                  <option>아무거나</option>
-                </select>
-                <div class="invalid-feedback">
-                  항목중 하나를 선택 해주세요.
-                </div>
-              </div>
-            <div class="col-md-2">
-                <select class="form-select" id="" >
-                    <option selected disabled value="">Y</option>
-                    <option>아무거나</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    항목중 하나를 선택 해주세요.
-                  </div>
-            </div>
-            <div class="col-md-2">
-                <select class="form-select" id="" >
-                    <option selected disabled value="">날짜</option>
-                    <option>등록일</option>
-                    <option>수정일</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    항목중 하나를 선택 해주세요.
-                  </div>
-            </div>
-            <div class="col-md-2">
-                <input type="text" class="form-control" id="validationCustom03" placeholder="2025-01-05" >
-                  <div class="invalid-feedback">
-                    코드를 입력해주세요.
-                  </div>
-            </div>
-            <div class="col-md-2">
-                <input type="text" class="form-control" id="validationCustom03" placeholder="2025-02-04" >
-                  <div class="invalid-feedback">
-                    코드를 입력해주세요.
-                  </div>
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2">
-                <select class="form-select" id="" >
-                    <option selected disabled value="">검색구분</option>
-                    <option>코드그룹 코드</option>
-                    <option>코드그룹 이름</option>
-                    <option>코드그룹 이름(영문)</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    항목중 하나를 선택 해주세요.
-                  </div>
-            </div>
-            <div class="col-md-2">
-                <input type="text" class="form-control" id="validationCustom03" placeholder="검색어" >
-                  <div class="invalid-feedback">
-                    코드를 입력해주세요.
-                  </div>
-            </div>
-            <div class="col-md-8">
-                <button class="btn btn-outline-dark" type="button" ><i class="bi bi-search"></i></button>
-                <button class="btn btn-outline-dark" type="button" ><i class="bi bi-arrow-clockwise"></i></button>
-            </div>
+      <div class="row">
         
         <div class="col-lg-12">
           <div class="card" >
             <div class="card-body">
-              <div class="row">
-                <div class="col-md-10" style="height: 50px;"><h5 class="card-title-list">Total : 42</h5></div>
-                  <div class="col-md-2 select-col"><select class="form-select select-end">
-                    <option value="">5</option>
-                    <option value="">10</option>
-                    <option value="">15</option>
-                  </select>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="select-lb" class="text form-select-label">코드그룹<sup>*</sup></label>
+                        <select class="form-select" id="select-lb">
+                            <option value="">선택하세요</option>
+                        </select>
+                    </div>
+                    <div class="col-8"></div>
                 </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="inputed" class="text form-control-label">코드<sup>*</sup></label>
+                        <input type="text" class="form-control" id="inputed" disabled placeholder="자동생성"> 
+                    </div>
+                    <div class="col-3">
+                        <label for="inputs" class="form-control-label text"><span>코드</span></label>
+                        <input type="text" class="form-control" placeholder="영대소문자,숫자" id="inputs">
+                    </div>
+                    <div class="col-3">
+                        <label for="input1" class="text form-control-label">코드 이름<sup>*</sup></label>
+                        <input type="text" class="form-control" placeholder="한글,영대소문자,숫자">
+                    </div>
+                    <div class="col-3">
+                        <label for="input2" class="text form-control-label">코드 이름(영문)</label>
+                        <input type="text" class="form-control" placeholder="영대소문자,숫자" id="input2">
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="select-lb2" class="form-select-label text">
+                        사용여부<sup>*</sup></label>
+                        <select class="form-select" id="select-lb2">
+                            <option value="">사용</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="input3" class="form-control-label text">순서</label>
+                        <input type="text" class="form-control" id="input3">
+                    </div>
                 </div>
-
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    
-                    <th data-sortable="false"  style="text-align: center; width: 100px;"><div class="checked"><input type="checkbox" class="form-check"></div></th>
-                    <th data-sortable="false" style="width: 10px; text-align: center;" >#</th>
-                    <th style="text-align: center;">
-                      사용
-                    </th>
-                    <th class="list-sort" style=" text-align: center;">코드그룹 코드</th>
-                    <th class="list-sort" style="text-align: center; ">코드그룹 이름</th>
-                    <th class="list-sort" style="text-align: center; ">코드그룹 이름(영문)</th>
-                    <th class="list-sort" style="text-align: center;">갯수</th>
-                    <th class="list-sort" style="text-align: center;">순서</th>
-                    <th data-type="date" data-format="YYYY/DD/MM" class="list-sort" style="text-align: center;">등록일</th>
-                    <th data-type="data" data-format="YYYY/DD/MM" class="list-sort" style="text-align: center;">수정일</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
-                        <td>42</td>
-                        <td >Y</td>
-                        <td >42</td>
-                        <td ><a href="">작품,기타사이트유형</a></td>
-                        <td ></td>
-                        <td >8</td>
-                        <td >1</td>
-                        <td ></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
-                        <td>41</td>
-                        <td >Y</td>
-                        <td >41</td>
-                        <td ><a href="">작품,연재사이트</a></td>
-                        <td ></td>
-                        <td >9</td>
-                        <td >1</td>
-                        <td ></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
-                        <td>40</td>
-                        <td >Y</td>
-                        <td >40</td>
-                        <td ><a href="">결제,구매자거래상태</a></td>
-                        <td ></td>
-                        <td >9</td>
-                        <td >1</td>
-                        <td ></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
-                        <td>39</td>
-                        <td >Y</td>
-                        <td >39</td>
-                        <td ><a href="">결제,판매자거래상태</a></td>
-                        <td ></td>
-                        <td >10</td>
-                        <td >1</td>
-                        <td ></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
-                        <td>38</td>
-                        <td >Y</td>
-                        <td >38</td>
-                        <td ><a href="">결제,승인상태</a></td>
-                        <td ></td>
-                        <td >7</td>
-                        <td >1</td>
-                        <td ></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
-                        <td>42</td>
-                        <td >Y</td>
-                        <td >42</td>
-                        <td ><a href="">작품,기타사이트유형</a></td>
-                        <td ></td>
-                        <td >8</td>
-                        <td >1</td>
-                        <td ></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td> <div class="checked"><input type="checkbox" class="form-check"></div></td>
-                        <td>42</td>
-                        <td >Y</td>
-                        <td >42</td>
-                        <td ><a href="">작품,기타사이트유형</a></td>
-                        <td ></td>
-                        <td >8</td>
-                        <td >1</td>
-                        <td ></td>
-                        <td></td>
-                    </tr>
-                    
-                  
-                  </tbody>
-                  <tfoot>
-                    
-                  </tfoot>
-                  
-                  </table>
-                  <div class="row">
-                    <div class="col-md-6">
-                  <button class="btn btn-danger">X</button>
-                  <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="textarea" class="form-control-label text1">설명</label>
+                        <textarea name="" id="textarea" class="form-control"></textarea>
+                    </div>
                 </div>
-                <div class="col-md-6" style="display: flex; justify-content: end;">
-                    
-                    <button class="btn btn-success"><i class="bi bi-journal-x"></i></button>
-                  <a href="codeGroup.html" class="btn btn-primary"><i class="bi bi-plus-lg"></i></a>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="input4" class="form-control-label text">다국어1</label>
+                        <input type="text" class="form-control" id="input4">
+                    </div>
+                    <div class="col-3">
+                        <label for="input5" class="form-control-label text">다국어2</label>
+                        <input type="text" class="form-control" id="input5">
+                    </div>
+                    <div class="col-3">
+                        <label for="input6" class="form-control-label text">다국어3</label>
+                        <input type="text" class="form-control" id="input6">
+                    </div>
+                    <div class="col-3">
+                        <label for="input7" class="form-control-label text">다국어4</label>
+                        <input type="text" class="form-control" id="input7">
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="input8" class="form-control-label text">다국어5</label>
+                        <input type="text" class="form-control" id="input8">
+                    </div>
+                    <div class="col-3">
+                        <label for="input9" class="form-control-label text">다국어6</label>
+                        <input type="text" class="form-control" id="input9">
+                    </div>
+                    <div class="col-3">
+                        <label for="input10" class="form-control-label text">다국어7</label>
+                        <input type="text" class="form-control" id="input10">
+                    </div>
+                    <div class="col-3">
+                        <label for="input11" class="form-control-label text">다국어8</label>
+                        <input type="text" class="form-control" id="input11">
+                    </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-3">
+                        <label for="input12" class="form-control-label text">예비1</label>
+                        <input type="text" class="form-control" id="input12">
+                    </div>
+                    <div class="col-3">
+                        <label for="input13" class="form-control-label text">예비2</label>
+                        <input type="text" class="form-control" id="input13">
+                    </div>
+                    <div class="col-3">
+                        <label for="input14" class="form-control-label text">예비3</label>
+                        <input type="text" class="form-control" id="input14">
+                    </div>
+                    <div class="col-3">
+                        <label for="input15" class="form-control-label text">예비4</label>
+                        <input type="text" class="form-control" id="input15">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="input16" class="form-control-label text">예비1</label>
+                        <input type="text" class="form-control" id="input16">
+                    </div>
+                    <div class="col-3">
+                        <label for="input17" class="form-control-label text">예비2</label>
+                        <input type="text" class="form-control" id="input17">
+                    </div>
+                    <div class="col-3">
+                        <label for="input18" class="form-control-label text">예비3</label>
+                        <input type="text" class="form-control" id="input18">
+                    </div>
+                    <div class="col-3">
+                        <label for="input19" class="form-control-label text">예비4</label>
+                        <input type="text" class="form-control" id="input19">
+                    </div>
+                </div>
+                <div class="row " >
+                    <div class="col-3" >
+                    <a href="codeList.html" class="btn btn-outline-dark" ><i class="bi bi-blockquote-right"></i></a></div>
+                    <div class="col"></div>
+                    <div class="col-3">
+                      <div style="display: flex;justify-content: end;"><button class="btn btn-primary"><i class="bi bi-server"></i></button></div>
+                    </div>
+                </div>
             </div>
           </div>
 
