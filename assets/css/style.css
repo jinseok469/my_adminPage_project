@@ -61,12 +61,12 @@ h1 {
 }
 
 .text {
-  padding-top: 2%;
-  padding-left: 5%;
+  padding-top: 0%;
+  padding-left: 3.5%;
 }
 .text1{
-  padding-top: 4%;
-  padding-left: 2.5%;
+  padding-top: 2.5%;
+  padding-left:1.5%;
 }
 
 sup {
@@ -161,6 +161,9 @@ input {
 }
 .white-row{
   background-color: white;
+}
+.num6{
+  height: 150px;
 }
 .row-high{
   align-items: center;
