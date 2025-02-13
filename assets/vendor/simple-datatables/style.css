@@ -3,7 +3,7 @@
 }
 
 .datatable-wrapper.no-footer .datatable-container {
-	border-bottom: 1px solid #d9d9d9;
+	/* border-bottom: 1px solid #d9d9d9; */
 }
 .datatable-top{
 	display: none;
@@ -34,7 +34,15 @@
 	justify-content: end;
 	
 }
-.btn-success{
+.padding-left{
+	padding-bottom: 30px;
+	padding-left: 40px;
+}
+.padding-right{
+	padding-bottom: 30px;
+	padding-right: 40px;
+}
+.btn-right{
 	margin-right: 5px;
 }
 .datatable-selector {
