@@ -2,9 +2,7 @@
 	border-top: 1px solid #d9d9d9;
 }
 
-.datatable-wrapper.no-footer .datatable-container {
-	/* border-bottom: 1px solid #d9d9d9; */
-}
+
 .datatable-top{
 	display: none;
 }
@@ -70,9 +68,7 @@
 	float: left;
 }
 
-.datatable-pagination li.datatable-hidden {
-    
-}
+
 
 .datatable-pagination a,
 .datatable-pagination button {
